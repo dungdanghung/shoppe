@@ -1,0 +1,156 @@
+html,body{
+    margin: 0;
+}
+:root{
+    --whilet-coler: #fff;
+    --back-coler: #000;
+    --text-coler: #333; 
+    --item-coler: #f53d2d;
+    --header-height: 120px;
+    --header-napbar: 38.4px;
+    --header-seach: calc(var(--header-height) - var(--header-napbar));
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grip{
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.grip__full-width{
+    width: 100%;
+}
+.grip__grou{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+@keyframes show{
+    from{
+     opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+
+.btn{
+    height: 36px;
+    min-width: 142px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 0;
+    cursor: pointer;
+    color: #333;
+    line-height: 1.6rem;
+}
+.btn--hover:hover{
+    background-color: #ccc;
+}
+.btn.btn--primary{
+    background-color: rgb(254, 75, 15);
+    color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.btn.btn--ditsaybo{
+    cursor: default;
+    background-color: #ccc
+}
+.grip_colum-2{
+ padding-left: 12px;
+ padding-right: 12px;
+ width: 16.6667%;
+}
+.grip_colum-2-4{
+    padding-left: 12px;
+ padding-right: 12px;
+ width: 20%;
+}
+.grip_colum-10{
+    padding-left: 12px;
+ padding-right: 12px;
+    width: 83.3334%;
+}
+.grip_colum-10-item-gia{
+    height: 36px;
+    background-color: #fff;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    align-items: center;
+    border-radius: 3px;
+}
+.grip_colum-10-item-gia-box{
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+      padding: 8px 16px;
+      position: 0;
+      list-style: none;
+      left: 0;
+      right: 0;
+      top: 100%;
+      margin: 0;
+      border-radius: 3px;
+      display: none;
+      transform-origin: top;
+      animation: hienlen ease 0.5s;
+  }
+  .grip_colum-10-item-gia-box-gia{
+      text-decoration: none;
+      color: #333;
+      padding: 6px 0;
+      font-size: 14px;
+      display: block;
+  }
+  .grip_colum-10-item-gia-box-gia:hover{
+      color: #f53d2d;
+  }
+  .grip_colum-10-item-gia:hover .grip_colum-10-item-gia-box{
+   display: block;
+
+  }
+  .trang-active .trangnumber{
+      color: #fff;
+      background-color: #f53d2d;
+  }
+  .trang-active .trangnumber:hover{
+      background-color: #ec675a;
+  }
+  .danhsach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .trang{
+    list-style: none;
+    margin: 0 5px;
+  }
+  .trangnumber{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+  }
